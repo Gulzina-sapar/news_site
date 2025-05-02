@@ -1,0 +1,113 @@
+body {
+  display: flex; /* С использованием flexbox */
+  min-height: 100vh;
+  margin: 0;
+}
+
+aside {
+  background: #181818;
+  width: 20%;
+  padding: 2.5%;
+  height: 100vh;
+  color: #fff;
+  border-right: 5px solid #4d4d4d;
+  display: flex; /* Используем flexbox в боковой панели */
+  flex-direction: column; /* Смотрим, чтобы элементы располагались вертикально */
+  align-items: center; /* Центрируем элементы по горизонтали */
+  justify-content: flex-start; /* Выравниваем элементы сверху */
+}
+
+.logo-img {
+  width: 100%; /* Логотип будет занимать всю доступную ширину */
+  max-width: 150px; /* Устанавливаем максимальную ширину для логотипа */
+  height: auto;
+  margin-bottom: 20px; /* Отступ снизу для логотипа */
+}
+
+nav {
+  width: 100%; /* Навигация будет занимать всю ширину aside */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+nav li {
+  margin: 10px 0;
+  transition: background 0.3s, color 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav li:hover {
+  background: #2e2e2e; /* Фон при наведении */
+}
+
+nav li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;
+}
+
+nav li:hover a {
+  color: #eb5959; /* Цвет текста и иконки при наведении */
+}
+
+nav li a i {
+  transition: transform 0.3s;
+}
+
+nav li:hover a i {
+  transform: scale(1.2); /* Увеличение иконки при наведении */
+}
+💡
+nav li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.3s, color 0.3s;
+}
+
+nav li:hover {
+  background: #2e2e2e;
+  transform: scale(1.02); /* лёгкое увеличение всего пункта */
+}
+
+nav li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;
+}
+
+nav li:hover a {
+  color: #eb5959; /* цвет текста и иконки */
+  text decoration:none
+  transform: scale(1.05);
+}
+
+nav li a i {
+  transition: all .6s ease;
+}
+
+nav li:hover a i {
+  transform: scale(1.05); /* увеличение иконки */
+}
+
+body {
+background: blue;
+}
