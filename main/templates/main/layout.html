@@ -18,9 +18,15 @@
        <span class ="Лого">Gulzina</span>
        <h3>Навигация</h3>
        <ul>
-            <li><a href="{%url 'home' %}"><i class="fa-solid fa-house"></i> Главная</a></li>
-            <li><a href="{%url 'about'%}"><i class="fa-solid fa-address-card"></i>Про нас</a></li>
-            <li><a href=""><i class="fa-solid fa-paper-plane"></i>Контакты</a></li>
+            <li><a href="{% url 'home' %}"><i class="fa-solid fa-house"></i> Главная</a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-address-card"></i>Про нас</a></li>
+            <li><a href="{% url 'news_home' %}"><i class="fa-solid fa-newspaper"></i> Новости</a></li>
+           <li><a href="{% url 'contacts' %}"><i class="fa-solid fa-paper-plane"></i>Контакты</a></li>
+            <li>
+                <a href="{% url 'create' %}" class="btn btn-info">
+                <i class="fas fa-plus-circle"></i> Добавить запись
+                </a>
+            </li>
        </ul>
    </aside>
    <main>
@@ -30,3 +36,4 @@
 
 </body>
 </html>
+
